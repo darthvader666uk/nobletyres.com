@@ -1,0 +1,11 @@
+title: NOBLE TYRES & EXHAUSTS
+description: NOBLE TYRES & EXHAUSTS. 1ST CHOICE CAR GARAGE FOR TYRES, EXHAUSTS, BRAKES, MOT AND SERVICING IN ABERDARE
+
+url: https://nobletyres.com
+baseurl: # Ex: /project-page
+
+navigation:
+    - title: Home
+      url: /index.htm
+
+google_analytics: "G-3QBWP2GB2L"
