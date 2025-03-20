@@ -1,14 +1,50 @@
-ser-agent: *
+User-agent: *
 Allow: /
 Disallow: /wp-admin/
 Disallow: /wp-includes/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.php$
+Disallow: /*?*
+Disallow: /search
+Disallow: /cgi-bin/
 
-Sitemap: https://nobletyres.com/sitemap.xml
+# Prevent media scraping
+Disallow: /*.gif$
+Disallow: /*.jpg$
+Disallow: /*.jpeg$
+Disallow: /*.png$
+Disallow: /*.webp$
 
 # Block common spam bots
 User-agent: SemrushBot
 Disallow: /
+
 User-agent: MJ12bot
 Disallow: /
+
 User-agent: AhrefsBot
 Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Allow specific bots
+User-agent: Googlebot
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.webp$
+
+User-agent: Googlebot-Image
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.webp$
+
+# Sitemaps
+Sitemap: https://nobletyres.com/sitemap.xml
+Sitemap: https://nobletyres.com/image-sitemap.xml
