@@ -12,82 +12,107 @@
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
     <!-- Additional Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
     <meta name="author" content="Noble Tyres & Exhausts LTD">
     <meta name="geo.region" content="GB-WLS">
     <meta name="geo.placename" content="Aberdare">
     <meta name="geo.position" content="51.69669330009156;-3.417500084654438">
     <meta name="ICBM" content="51.69669330009156, -3.417500084654438">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="theme-color" content="#004d99">
 
     <!-- Resource Hints -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preload" as="style" href="./css/critical.css">
 
     <!-- Schema.org Markup -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "AutoRepair",
-        "name": "Noble Tyres & Exhausts",
-        "image": "https://nobletyres.com/images/noble-tyres-and-exhaust-front-garage-aberaman-aberdare.webp",
-        "description": "Expert car garage in Aberdare offering MOT testing from £35, tyre fitting, brake repairs and servicing. Family-run with IMI certified technicians.",
-        "@id": "https://nobletyres.com",
-        "url": "https://nobletyres.com",
-        "telephone": "01685874476",
-        "priceRange": "££",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Unit 3 C1 Trade Park, Aberaman",
-            "addressLocality": "Aberdare",
-            "postalCode": "CF44 6DA",
-            "addressRegion": "Wales",
-            "addressCountry": "GB"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 51.69669330009156,
-            "longitude": -3.417500084654438
-        },
-        "openingHoursSpecification": [
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "08:30",
-                "closes": "17:30"
+        {
+            "@context": "https://schema.org",
+            "@type": "AutoRepair",
+            "name": "Noble Tyres & Exhausts",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://nobletyres.com/images/noble-tyres-and-exhaust-front-garage-aberaman-aberdare.webp",
+                "width": "1200",
+                "height": "630"
             },
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Saturday",
-                "opens": "08:30",
-                "closes": "12:30"
-            }
-        ],
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "reviewCount": "127"
-        },
-        "serviceArea": {
-            "@type": "GeoCircle",
-            "geoMidpoint": {
+            "description": "Expert car garage in Aberdare offering MOT testing from £35, tyre fitting, brake repairs and servicing. Family-run with IMI certified technicians.",
+            "@id": "https://nobletyres.com",
+            "url": "https://nobletyres.com",
+            "telephone": "01685874476",
+            "priceRange": "££",
+            "hasMap": "https://www.google.com/maps?cid=10665307309080616806",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Unit 3 C1 Trade Park, Aberaman",
+                "addressLocality": "Aberdare",
+                "postalCode": "CF44 6DA",
+                "addressRegion": "Wales",
+                "addressCountry": "GB"
+            },
+            "geo": {
                 "@type": "GeoCoordinates",
                 "latitude": 51.69669330009156,
                 "longitude": -3.417500084654438
             },
-            "geoRadius": "16093.4"
-        },
-        "sameAs": [
-            "https://www.facebook.com/pg/nobletyres",
-            "https://www.google.com/maps?cid=10665307309080616806"
-        ]
-    }
-    </script>
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                    "opens": "08:30",
+                    "closes": "17:30"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Saturday",
+                    "opens": "08:30",
+                    "closes": "12:30"
+                }
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "127",
+                "bestRating": "5"
+            },
+            "serviceArea": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 51.69669330009156,
+                    "longitude": -3.417500084654438
+                },
+                "geoRadius": "16093.4"
+            },
+            "potentialAction": {
+                "@type": "ReserveAction",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "tel:01685874476",
+                    "inLanguage": "en-GB",
+                    "actionPlatform": ["http://schema.org/MobileWebPlatform"]
+                },
+                "result": {
+                    "@type": "Reservation",
+                    "name": "Book MOT Test or Service"
+                }
+            },
+            "sameAs": [
+                "https://www.facebook.com/pg/nobletyres",
+                "https://www.google.com/maps?cid=10665307309080616806"
+            ]
+        }
+        </script>
 
     <!-- Open Graph Tags -->
     <meta property="og:type" content="business.business">
-    <meta property="og:title" content="{{ page.title | default: 'Noble Tyres & Exhausts | Car Garage Aberdare' }}">
-    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:title" content="{{ page.title | default: 'Noble Tyres & Exhausts | Car Garage Aberdare | MOT Testing from £35' }}">
+    <meta property="og:description" content="{{ page.description | default: 'Expert car garage in Aberdare offering MOT testing from £35, tyre fitting, brake repairs and servicing. Family-run with IMI certified technicians.' }}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:image" content="{{ site.url }}/images/noble-tyres-and-exhaust-front-garage-aberaman-aberdare.webp">
     <meta property="og:image:width" content="1200">
@@ -95,6 +120,11 @@
     <meta property="og:image:type" content="image/webp">
     <meta property="og:site_name" content="Noble Tyres & Exhausts">
     <meta property="og:locale" content="en_GB">
+    <meta property="business:contact_data:street_address" content="Unit 3 C1 Trade Park, Aberaman">
+    <meta property="business:contact_data:locality" content="Aberdare">
+    <meta property="business:contact_data:postal_code" content="CF44 6DA">
+    <meta property="business:contact_data:country_name" content="United Kingdom">
+    <meta property="business:contact_data:phone_number" content="01685 874476">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -102,22 +132,18 @@
     <meta name="twitter:description" content="{{ page.description }}">
     <meta name="twitter:image" content="{{ site.url }}/images/noble-tyres-and-exhaust-front-garage-aberaman-aberdare.webp">
 
-    <!-- Resource Loading -->
-    <link rel="preload" href="./css/critical.css" as="style">
-    <link rel="preload" href="./fonts/raleway-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-
     <!-- Existing CSS -->
-    <link rel="stylesheet" id="wp-block-library-css" href="./css/wp-block-library-css.min.css?ver=6.6.2" type="text/css" media="all" />
+    <link rel="stylesheet" id="wp-block-library-css" href="./css/wp-block-library-css.min.css" type="text/css" media="all" />
     <link rel="stylesheet" id="wp-block-library-theme-inline-css" href="./css/wp-block-library-theme-inline-css.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" id="remove-style-meta-css" href="./css/entrymetastyle.min.css?ver=1.0" type="text/css" media="all" />
+    <link rel="stylesheet" id="remove-style-meta-css" href="./css/entrymetastyle.min.css" type="text/css" media="all" />
     <link rel="stylesheet" id="fontawesome" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link crossorigin="anonymous" rel="stylesheet" id="onepress-fonts-css" href="https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&#038;subset=latin%2Clatin-ext&#038;display=swap&#038;ver=2.3.10" type="text/css" media="all" />
-    <link rel="stylesheet" id="onepress-animate-css" href="./css/animate.min.css?ver=2.3.10" type="text/css" media="all" />
-    <link rel="stylesheet" id="onepress-fa-shims-css" href="./css/v4-shims.min.css?ver=6.5.1" type="text/css" media="all" />
-    <link rel="stylesheet" id="onepress-bootstrap-css" href="./css/bootstrap.min.css?ver=2.3.10" type="text/css" media="all" />
+    <link rel="stylesheet" id="onepress-animate-css" href="./css/animate.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="onepress-fa-shims-css" href="./css/v4-shims.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="onepress-bootstrap-css" href="./css/bootstrap.min.css" type="text/css" media="all" />
     <link rel="stylesheet" id="onepress-style-css" href="./css/onepress-style-css.min.css" type="text/css" media="all" />
     <link rel="stylesheet" id="onepress-style-inline-css" href="./css/onepress-style-inline-css.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" id="onepress-gallery-lightgallery-css" href="./css/lightgallery.min.css?ver=6.6.2" type="text/css" media="all" />
+    <link rel="stylesheet" id="onepress-gallery-lightgallery-css" href="./css/lightgallery.min.css" type="text/css" media="all" />
 
     <!-- Favicons -->
     <link rel="icon" href="./images/favicon32x32.webp" sizes="32x32" type="image/webp">
@@ -152,15 +178,15 @@
     {% include footer.html %}
 
     <!-- Existing JavaScript -->
-    <script type="text/javascript" src="./js/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-    <script type="text/javascript" src="./js/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer data-deferred="1"></script>
+    <script type="text/javascript" src="./js/jquery.min.js" id="jquery-core-js"></script>
+    <script type="text/javascript" src="./js/jquery-migrate.min.js" id="jquery-migrate-js" defer data-deferred="1"></script>
     <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-3QBWP2GB2L" id="google_gtagjs-js" defer data-deferred="1"></script>
     <script type="text/javascript" id="google_gtagjs-js-after" src="data:text/javascript;base64,d2luZG93LmRhdGFMYXllcj13aW5kb3cuZGF0YUxheWVyfHxbXTtmdW5jdGlvbiBndGFnKCl7ZGF0YUxheWVyLnB1c2goYXJndW1lbnRzKX0KZ3RhZygic2V0IiwibGlua2VyIix7ImRvbWFpbnMiOlsibm9ibGV0eXJlcy5jb20iXX0pO2d0YWcoImpzIixuZXcgRGF0ZSgpKTtndGFnKCJzZXQiLCJkZXZlbG9wZXJfaWQuZFpUTmlNVCIsITApO2d0YWcoImNvbmZpZyIsIkctM1FCV1AyR0IyTCIp" defer></script>
     <link rel="stylesheet" id="fontawesome" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script type="text/javascript" src="./js/isotope.pkgd.min.js?ver=2.3.10" id="onepress-gallery-masonry-js" defer data-deferred="1"></script>
+    <script type="text/javascript" src="./js/isotope.pkgd.min.js" id="onepress-gallery-masonry-js" defer data-deferred="1"></script>
     <script type="text/javascript" id="onepress-theme-js-extra" src="data:text/javascript;base64,dmFyIG9uZXByZXNzX2pzX3NldHRpbmdzPXsib25lcHJlc3NfZGlzYWJsZV9hbmltYXRpb24iOiIiLCJvbmVwcmVzc19kaXNhYmxlX3N0aWNreV9oZWFkZXIiOiIiLCJvbmVwcmVzc192ZXJ0aWNhbF9hbGlnbl9tZW51IjoiIiwiaGVyb19hbmltYXRpb24iOiJmbGlwSW5YIiwiaGVyb19zcGVlZCI6IjUwMDAiLCJoZXJvX2ZhZGUiOiI3NTAiLCJzdWJtZW51X3dpZHRoIjoiMCIsImhlcm9fZHVyYXRpb24iOiI1MDAwIiwiaGVyb19kaXNhYmxlX3ByZWxvYWQiOiIiLCJkaXNhYmxlZF9nb29nbGVfZm9udCI6IiIsImlzX2hvbWUiOiIiLCJnYWxsZXJ5X2VuYWJsZSI6IjEiLCJpc19ydGwiOiIiLCJwYXJhbGxheF9zcGVlZCI6IjAuNSJ9" defer></script>
-    <script type="text/javascript" src="./js/theme-all.min.js?ver=2.3.10" id="onepress-theme-js" defer data-deferred="1"></script>
+    <script type="text/javascript" src="./js/theme-all.min.js" id="onepress-theme-js" defer data-deferred="1"></script>
     <script type="text/javascript" id="jquery.bully-js-extra" src="data:text/javascript;base64,dmFyIE9uZXByZXNzX0J1bGx5PXsiZW5hYmxlX2xhYmVsIjoiMSIsImRpc2FibGVfbW9iaWxlIjoiIiwic2VjdGlvbnMiOnsiaGVybyI6eyJpZCI6Imhlcm8iLCJfaWQiOiJoZXJvIiwiaW52ZXJzZSI6ITEsImVuYWJsZSI6ITEsInRpdGxlIjoiSG9tZSJ9LCJzZXJ2aWNlcyI6eyJpZCI6InNlcnZpY2VzIiwiX2lkIjoiZmVhdHVyZXMiLCJpbnZlcnNlIjohMSwiZW5hYmxlIjohMSwidGl0bGUiOiJPdXIgU2VydmljZXMifSwiYWJvdXQiOnsiaWQiOiJhYm91dCIsIl9pZCI6ImFib3V0IiwiaW52ZXJzZSI6ITEsImVuYWJsZSI6ITEsInRpdGxlIjoiQWJvdXQgVXMifSwicHJvZHVjdHMiOnsiaWQiOiJwcm9kdWN0cyIsIl9pZCI6InNlcnZpY2VzIiwiaW52ZXJzZSI6ITEsImVuYWJsZSI6ITEsInRpdGxlIjoiT3VyIFByb2R1Y3RzIn0sImNvbnRhY3QiOnsiaWQiOiJjb250YWN0IiwiX2lkIjoiY29udGFjdCIsImludmVyc2UiOiExLCJlbmFibGUiOiExLCJ0aXRsZSI6IkdldCBpbiB0b3VjaCJ9fX0=" defer></script>
-    <script type="text/javascript" src="./js/jquery.bully.js?ver=6.6.2" id="jquery.bully-js" defer data-deferred="1"></script>
+    <script type="text/javascript" src="./js/jquery.bully.js" id="jquery.bully-js" defer data-deferred="1"></script>
 </body>
 </html>

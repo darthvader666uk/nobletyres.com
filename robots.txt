@@ -1,0 +1,14 @@
+ser-agent: *
+Allow: /
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+
+Sitemap: https://nobletyres.com/sitemap.xml
+
+# Block common spam bots
+User-agent: SemrushBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+User-agent: AhrefsBot
+Disallow: /
