@@ -1,117 +1,884 @@
-layouts/default.html -->
 <!DOCTYPE html>
 <html lang="en-GB">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="https://gmpg.org/xfn/11">
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <title>Noble Tyres &amp; Exhausts LTD</title>
+        <meta name="description" content="Noble Tyres &amp; Exhausts. 1st Choice car garage for Tyres, Exhausts, Brakes, MOT and Servicing in Aberdare. We are a friendly, family-run Garage that service the local area and the surroundings of Aberdare." />
+        <link rel="canonical" href="https://nobletyres.com/" />
+        <meta property="og:locale" content="en_GB" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Noble Tyres &amp; Exhausts LTD" />
+        <meta property="og:description" content="Noble Tyres &amp; Exhausts. 1st Choice car garage for Tyres, Exhausts, Brakes, MOT and Servicing in Aberdare. We are a friendly, family-run Garage that service the local area and the surroundings of Aberdare." />
+        <meta property="og:url" content="https://nobletyres.com/" />
+        <meta property="og:site_name" content="Noble Tyres &amp; Exhausts LTD" />
+        <meta property="article:publisher" content="https://nobletyres.com/" />
+        <meta property="article:modified_time" content="2019-10-02T14:21:55+00:00" />
+        <meta property="og:image" content="./images/rsz_120130207_113738.webp" />
+        <meta property="og:image:width" content="816" />
+        <meta property="og:image:height" content="546" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta name="msvalidate.01" content="9C0F3A106EBEBAC60A4B14C62F9F8C1C" />
+        <meta name="google-site-verification" content="rKFA0God7NwX7n63WFiVlnHMCN3xkUgj_KYLjI28kI0" />
+        <meta name="yandex-verification" content="be7d793bf1e7f461" />
+        <meta name="geo.placename" content="Aberdare" />
+        <meta name="geo.position" content="51.69669330009156;-3.417500084654438" />
+        <meta name="geo.region" content="United Kingdom (UK)" />
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        <link rel="stylesheet" id="wp-block-library-css" href="./css/wp-block-library-css.min.css?ver=6.6.2" type="text/css" media="all" />
+        <link rel="stylesheet" id="wp-block-library-theme-inline-css" href="./css/wp-block-library-theme-inline-css.min.css" type="text/css" media="all" />
+        <style id="classic-theme-styles-inline-css" type="text/css">
+          /*! This file is auto-generated */
+          .wp-block-button__link {
+            color: #fff;
+            background-color: #32373c;
+            border-radius: 9999px;
+            box-shadow: none;
+            text-decoration: none;
+            padding: calc(.667em + 2px) calc(1.333em + 2px);
+            font-size: 1.125em
+          }
 
-    <!-- Primary Meta Tags -->
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="author" content="{{ site.author }}">
+          .wp-block-file__button {
+            background: #32373c;
+            color: #fff;
+            text-decoration: none
+          }
+        </style>
+        <style id="global-styles-inline-css" type="text/css">
+          :root {
+            --wp--preset--aspect-ratio--square: 1;
+            --wp--preset--aspect-ratio--4-3: 4/3;
+            --wp--preset--aspect-ratio--3-4: 3/4;
+            --wp--preset--aspect-ratio--3-2: 3/2;
+            --wp--preset--aspect-ratio--2-3: 2/3;
+            --wp--preset--aspect-ratio--16-9: 16/9;
+            --wp--preset--aspect-ratio--9-16: 9/16;
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+          }
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+          :where(.is-layout-flex) {
+            gap: 0.5em;
+          }
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="business.business">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html','' }}">
-    <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:image" content="{{ site.url }}/images/noble-tyres-and-exhaust-front-garage-aberaman-aberdare.webp">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="{{ site.locale }}">
+          :where(.is-layout-grid) {
+            gap: 0.5em;
+          }
 
-    <!-- Business Info -->
-    <meta property="business:contact_data:street_address" content="{{ site.business.address.street }}">
-    <meta property="business:contact_data:locality" content="{{ site.business.address.city }}">
-    <meta property="business:contact_data:postal_code" content="{{ site.business.address.postcode }}">
-    <meta property="business:contact_data:country_name" content="United Kingdom">
-    <meta property="business:contact_data:phone_number" content="{{ site.business.phone }}">
+          body .is-layout-flex {
+            display: flex;
+          }
 
-    <!-- Geo Location -->
-    <meta name="geo.placename" content="Aberdare">
-    <meta name="geo.position" content="51.69669330009156;-3.417500084654438">
-    <meta name="geo.region" content="GB-WLS">
+          .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+          }
 
-    <!-- Preload Critical Assets -->
-    <link rel="preload" href="/css/onepress-style-css.min.css" as="style">
-    <link rel="preload" href="/js/theme-all.min.js" as="script">
-    <link rel="preload" href="/fonts/raleway-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+          .is-layout-flex> :is(*, div) {
+            margin: 0;
+          }
 
-    <!-- Schema.org Markup -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "AutoRepair",
-        "name": "{{ site.title }}",
-        "image": "{{ site.url }}/images/noble-tyres-and-exhaust-front-garage-aberaman-aberdare.webp",
-        "description": "{{ site.description }}",
-        "@id": "{{ site.url }}",
-        "url": "{{ site.url }}",
-        "telephone": "{{ site.business.phone }}",
-        "priceRange": "££",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "{{ site.business.address.street }}",
-            "addressLocality": "{{ site.business.address.city }}",
-            "postalCode": "{{ site.business.address.postcode }}",
-            "addressRegion": "Wales",
-            "addressCountry": "GB"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 51.69669330009156,
-            "longitude": -3.417500084654438
-        },
-        "openingHoursSpecification": [
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "08:30",
-                "closes": "17:30"
-            },
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Saturday",
-                "opens": "08:30",
-                "closes": "12:30"
+          body .is-layout-grid {
+            display: grid;
+          }
+
+          .is-layout-grid> :is(*, div) {
+            margin: 0;
+          }
+
+          :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+          }
+
+          :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+          }
+
+          :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+          }
+
+          :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+          }
+
+          .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+          }
+
+          .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+          }
+
+          .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+          }
+
+          .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+          }
+
+          .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+          }
+
+          .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+          }
+
+          .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+          }
+
+          .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+          }
+
+          .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+          }
+
+          .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+          }
+
+          .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+          }
+
+          .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+          }
+
+          .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+          }
+
+          .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+          }
+
+          .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+          }
+
+          .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+          }
+
+          .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+          }
+
+          .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+          }
+
+          .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+          }
+
+          .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+          }
+
+          .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+          }
+
+          .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+          }
+
+          .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+          }
+
+          .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+          }
+
+          .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+          }
+
+          .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+          }
+
+          .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+          }
+
+          .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+          }
+
+          .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+          }
+
+          .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+          }
+
+          .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+          }
+
+          .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+          }
+
+          .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+          }
+
+          .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+          }
+
+          .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+          }
+
+          .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+          }
+
+          .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+          }
+
+          .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+          }
+
+          .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+          }
+
+          .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+          }
+
+          .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+          }
+
+          .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+          }
+
+          .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+          }
+
+          .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+          }
+
+          .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+          }
+
+          .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+          }
+
+          .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+          }
+
+          .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+          }
+
+          .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+          }
+
+          .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+          }
+
+          .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+          }
+
+          .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+          }
+
+          :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+          }
+
+          :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+          }
+
+          :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+          }
+
+          :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+          }
+
+          :root :where(.wp-block-pullquote) {
+            font-size: 1.5em;
+            line-height: 1.6;
+          }
+        </style>
+        <link crossorigin="anonymous" rel="stylesheet" id="onepress-fonts-css" href="https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&#038;subset=latin%2Clatin-ext&#038;display=swap&#038;ver=2.3.10" type="text/css" media="all" />
+        <link rel="stylesheet" id="onepress-animate-css" href="./css/animate.min.css?ver=2.3.10" type="text/css" media="all" />
+        <link rel="stylesheet" id="onepress-fa-shims-css" href="./css/v4-shims.min.css?ver=6.5.1" type="text/css" media="all" />
+        <link rel="stylesheet" id="onepress-bootstrap-css" href="./css/bootstrap.min.css?ver=2.3.10" type="text/css" media="all" />
+        <link rel="stylesheet" id="onepress-style-css" href="./css/onepress-style-css.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" id="onepress-style-inline-css" href="./css/onepress-style-inline-css.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" id="onepress-gallery-lightgallery-css" href="./css/lightgallery.min.css?ver=6.6.2" type="text/css" media="all" />
+        <script type="text/javascript" src="./js/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+        <script type="text/javascript" src="./js/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer data-deferred="1"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-3QBWP2GB2L" id="google_gtagjs-js" defer data-deferred="1"></script>
+        <script type="text/javascript" id="google_gtagjs-js-after" src="data:text/javascript;base64,d2luZG93LmRhdGFMYXllcj13aW5kb3cuZGF0YUxheWVyfHxbXTtmdW5jdGlvbiBndGFnKCl7ZGF0YUxheWVyLnB1c2goYXJndW1lbnRzKX0KZ3RhZygic2V0IiwibGlua2VyIix7ImRvbWFpbnMiOlsibm9ibGV0eXJlcy5jb20iXX0pO2d0YWcoImpzIixuZXcgRGF0ZSgpKTtndGFnKCJzZXQiLCJkZXZlbG9wZXJfaWQuZFpUTmlNVCIsITApO2d0YWcoImNvbmZpZyIsIkctM1FCV1AyR0IyTCIp" defer></script>
+        <link rel="shortlink" href="https://nobletyres.com/" />
+        <meta name="generator" content="Site Kit by Google 1.137.0" />
+        <meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236">
+        <meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com">
+        <link rel="icon" href="./images/favicon32x32.webp" sizes="32x32" />
+        <link rel="icon" href="./images/favicon192x192.webp" sizes="192x192" />
+        <link rel="apple-touch-icon" href="./images/favicon180x180.webp" />
+        <meta name="msapplication-TileImage" content="./images/favicon270x270.webp" />
+      </head>
+      <body data-rsssl="1" class="home page-template page-template-template-frontpage page-template-template-frontpage-php page page-id-10340"></body>
+        {{ content }}
+    </body>
+    <footer id="colophon" class="site-footer" role="contentinfo">
+      <div class="footer-connect">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 offset-md-2 col-sm-12 offset-md-0">
+              <div class="footer-social">
+                <h5 class="follow-heading">Check us out on Facebook, Twitter and Google+</h5>
+                <div class="footer-social-icons">
+                  <a target="_blank" href="https://www.facebook.com/pg/nobletyres" title="Facebook">
+                    <i class="fa  fa-facebook"></i>
+                  </a>
+                  <a target="_blank" href="https://twitter.com/NobleTyres" title="Twitter">
+                    <i class="fa  fa-twitter"></i>
+                  </a>
+                  <a target="_blank" href="https://www.google.com/maps/place/Noble+Tyres++Exhausts+LTD/@51.696547,-3.417543,17z/data=!4m5!3m4!1s0x0:0x93fe36eabb4f456!8m2!3d51.696578!4d-3.4175921?hl=en-GB" title="Google+">
+                    <i class="fa  fa-google"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="site-info">
+        <div class="container">
+          <div class="btt">
+            <a class="back-to-top" href="#page" title="Back To Top">
+              <i class="fa fa-angle-double-up wow flash" data-wow-duration="2s"></i>
+            </a>
+          </div> Copyright &copy; 2024 Noble Tyres &amp; Exhausts LTD
+        </div>
+      </div>
+    </footer>
+  </div>
+  <link rel="stylesheet" id="remove-style-meta-css" href="./css/entrymetastyle.min.css?ver=1.0" type="text/css" media="all" />
+  <link rel="stylesheet" id="fontawesome" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="text/javascript" src="./js/isotope.pkgd.min.js?ver=2.3.10" id="onepress-gallery-masonry-js" defer data-deferred="1"></script>
+  <script type="text/javascript" id="onepress-theme-js-extra" src="data:text/javascript;base64,dmFyIG9uZXByZXNzX2pzX3NldHRpbmdzPXsib25lcHJlc3NfZGlzYWJsZV9hbmltYXRpb24iOiIiLCJvbmVwcmVzc19kaXNhYmxlX3N0aWNreV9oZWFkZXIiOiIiLCJvbmVwcmVzc192ZXJ0aWNhbF9hbGlnbl9tZW51IjoiIiwiaGVyb19hbmltYXRpb24iOiJmbGlwSW5YIiwiaGVyb19zcGVlZCI6IjUwMDAiLCJoZXJvX2ZhZGUiOiI3NTAiLCJzdWJtZW51X3dpZHRoIjoiMCIsImhlcm9fZHVyYXRpb24iOiI1MDAwIiwiaGVyb19kaXNhYmxlX3ByZWxvYWQiOiIiLCJkaXNhYmxlZF9nb29nbGVfZm9udCI6IiIsImlzX2hvbWUiOiIiLCJnYWxsZXJ5X2VuYWJsZSI6IjEiLCJpc19ydGwiOiIiLCJwYXJhbGxheF9zcGVlZCI6IjAuNSJ9" defer></script>
+  <script type="text/javascript" src="./js/theme-all.min.js?ver=2.3.10" id="onepress-theme-js" defer data-deferred="1"></script>
+  <script type="text/javascript" id="jquery.bully-js-extra" src="data:text/javascript;base64,dmFyIE9uZXByZXNzX0J1bGx5PXsiZW5hYmxlX2xhYmVsIjoiMSIsImRpc2FibGVfbW9iaWxlIjoiIiwic2VjdGlvbnMiOnsiaGVybyI6eyJpZCI6Imhlcm8iLCJfaWQiOiJoZXJvIiwiaW52ZXJzZSI6ITEsImVuYWJsZSI6ITEsInRpdGxlIjoiSG9tZSJ9LCJzZXJ2aWNlcyI6eyJpZCI6InNlcnZpY2VzIiwiX2lkIjoiZmVhdHVyZXMiLCJpbnZlcnNlIjohMSwiZW5hYmxlIjohMSwidGl0bGUiOiJPdXIgU2VydmljZXMifSwiYWJvdXQiOnsiaWQiOiJhYm91dCIsIl9pZCI6ImFib3V0IiwiaW52ZXJzZSI6ITEsImVuYWJsZSI6ITEsInRpdGxlIjoiQWJvdXQgVXMifSwicHJvZHVjdHMiOnsiaWQiOiJwcm9kdWN0cyIsIl9pZCI6InNlcnZpY2VzIiwiaW52ZXJzZSI6ITEsImVuYWJsZSI6ITEsInRpdGxlIjoiT3VyIFByb2R1Y3RzIn0sImNvbnRhY3QiOnsiaWQiOiJjb250YWN0IiwiX2lkIjoiY29udGFjdCIsImludmVyc2UiOiExLCJlbmFibGUiOiExLCJ0aXRsZSI6IkdldCBpbiB0b3VjaCJ9fX0=" defer></script>
+  <script type="text/javascript" src="./js/jquery.bully.js?ver=6.6.2" id="jquery.bully-js" defer data-deferred="1"></script>
+  <script data-no-optimize="1">
+    ! function(t, e) {
+      "object" == typeof exports && "undefined" != typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define(e) : (t = "undefined" != typeof globalThis ? globalThis : t || self).LazyLoad = e()
+    }(this, function() {
+      "use strict";
+
+      function e() {
+        return (e = Object.assign || function(t) {
+          for (var e = 1; e < arguments.length; e++) {
+            var n, a = arguments[e];
+            for (n in a) Object.prototype.hasOwnProperty.call(a, n) && (t[n] = a[n])
+          }
+          return t
+        }).apply(this, arguments)
+      }
+
+      function i(t) {
+        return e({}, it, t)
+      }
+
+      function o(t, e) {
+        var n, a = "LazyLoad::Initialized",
+          i = new t(e);
+        try {
+          n = new CustomEvent(a, {
+            detail: {
+              instance: i
             }
-        ]
-    }
-    </script>
+          })
+        } catch (t) {
+          (n = document.createEvent("CustomEvent")).initCustomEvent(a, !1, !1, {
+            instance: i
+          })
+        }
+        window.dispatchEvent(n)
+      }
 
-    <!-- Performance Optimized CSS Loading -->
-    <link rel="stylesheet" href="/css/onepress-style-css.min.css">
-    <link rel="stylesheet" href="/css/bootstrap.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
-          media="print" onload="this.media='all'">
+      function l(t, e) {
+        return t.getAttribute(gt + e)
+      }
 
-    <!-- Favicons -->
-    <link rel="icon" href="/images/favicon32x32.webp" sizes="32x32">
-    <link rel="icon" href="/images/favicon192x192.webp" sizes="192x192">
-    <link rel="apple-touch-icon" href="/images/favicon180x180.webp">
-    <meta name="msapplication-TileImage" content="/images/favicon270x270.webp">
+      function c(t) {
+        return l(t, bt)
+      }
 
-    <!-- Analytics -->
-    {% if site.google_analytics %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
-    </script>
-    {% endif %}
-</head>
+      function s(t, e) {
+        return function(t, e, n) {
+          e = gt + e;
+          null !== n ? t.setAttribute(e, n) : t.removeAttribute(e)
+        }(t, bt, e)
+      }
 
-<body class="{{ page.layout }} {{ page.class }}" data-rsssl="1">
-    {{ content }}
+      function r(t) {
+        return s(t, null), 0
+      }
 
-    <!-- Deferred JavaScript Loading -->
-    <script src="/js/jquery.min.js" defer></script>
-    <script src="/js/theme-all.min.js" defer></script>
-</body>
-</html>
+      function u(t) {
+        return null === c(t)
+      }
+
+      function d(t) {
+        return c(t) === vt
+      }
+
+      function f(t, e, n, a) {
+        t && (void 0 === a ? void 0 === n ? t(e) : t(e, n) : t(e, n, a))
+      }
+
+      function _(t, e) {
+        nt ? t.classList.add(e) : t.className += (t.className ? " " : "") + e
+      }
+
+      function v(t, e) {
+        nt ? t.classList.remove(e) : t.className = t.className.replace(new RegExp("(^|\\s+)" + e + "(\\s+|$)"), " ").replace(/^\s+/, "").replace(/\s+$/, "")
+      }
+
+      function g(t) {
+        return t.llTempImage
+      }
+
+      function b(t, e) {
+        !e || (e = e._observer) && e.unobserve(t)
+      }
+
+      function p(t, e) {
+        t && (t.loadingCount += e)
+      }
+
+      function h(t, e) {
+        t && (t.toLoadCount = e)
+      }
+
+      function n(t) {
+        for (var e, n = [], a = 0; e = t.children[a]; a += 1) "SOURCE" === e.tagName && n.push(e);
+        return n
+      }
+
+      function m(t, e) {
+        (t = t.parentNode) && "PICTURE" === t.tagName && n(t).forEach(e)
+      }
+
+      function a(t, e) {
+        n(t).forEach(e)
+      }
+
+      function E(t) {
+        return !!t[st]
+      }
+
+      function I(t) {
+        return t[st]
+      }
+
+      function y(t) {
+        return delete t[st]
+      }
+
+      function A(e, t) {
+        var n;
+        E(e) || (n = {}, t.forEach(function(t) {
+          n[t] = e.getAttribute(t)
+        }), e[st] = n)
+      }
+
+      function k(a, t) {
+        var i;
+        E(a) && (i = I(a), t.forEach(function(t) {
+          var e, n;
+          e = a, (t = i[n = t]) ? e.setAttribute(n, t) : e.removeAttribute(n)
+        }))
+      }
+
+      function L(t, e, n) {
+        _(t, e.class_loading), s(t, ut), n && (p(n, 1), f(e.callback_loading, t, n))
+      }
+
+      function w(t, e, n) {
+        n && t.setAttribute(e, n)
+      }
+
+      function x(t, e) {
+        w(t, ct, l(t, e.data_sizes)), w(t, rt, l(t, e.data_srcset)), w(t, ot, l(t, e.data_src))
+      }
+
+      function O(t, e, n) {
+        var a = l(t, e.data_bg_multi),
+          i = l(t, e.data_bg_multi_hidpi);
+        (a = at && i ? i : a) && (t.style.backgroundImage = a, n = n, _(t = t, (e = e).class_applied), s(t, ft), n && (e.unobserve_completed && b(t, e), f(e.callback_applied, t, n)))
+      }
+
+      function N(t, e) {
+        !e || 0 < e.loadingCount || 0 < e.toLoadCount || f(t.callback_finish, e)
+      }
+
+      function C(t, e, n) {
+        t.addEventListener(e, n), t.llEvLisnrs[e] = n
+      }
+
+      function M(t) {
+        return !!t.llEvLisnrs
+      }
+
+      function z(t) {
+        if (M(t)) {
+          var e, n, a = t.llEvLisnrs;
+          for (e in a) {
+            var i = a[e];
+            n = e, i = i, t.removeEventListener(n, i)
+          }
+          delete t.llEvLisnrs
+        }
+      }
+
+      function R(t, e, n) {
+        var a;
+        delete t.llTempImage, p(n, -1), (a = n) && --a.toLoadCount, v(t, e.class_loading), e.unobserve_completed && b(t, n)
+      }
+
+      function T(o, r, c) {
+        var l = g(o) || o;
+        M(l) || function(t, e, n) {
+          M(t) || (t.llEvLisnrs = {});
+          var a = "VIDEO" === t.tagName ? "loadeddata" : "load";
+          C(t, a, e), C(t, "error", n)
+        }(l, function(t) {
+          var e, n, a, i;
+          n = r, a = c, i = d(e = o), R(e, n, a), _(e, n.class_loaded), s(e, dt), f(n.callback_loaded, e, a), i || N(n, a), z(l)
+        }, function(t) {
+          var e, n, a, i;
+          n = r, a = c, i = d(e = o), R(e, n, a), _(e, n.class_error), s(e, _t), f(n.callback_error, e, a), i || N(n, a), z(l)
+        })
+      }
+
+      function G(t, e, n) {
+        var a, i, o, r, c;
+        t.llTempImage = document.createElement("IMG"), T(t, e, n), E(c = t) || (c[st] = {
+          backgroundImage: c.style.backgroundImage
+        }), o = n, r = l(a = t, (i = e).data_bg), c = l(a, i.data_bg_hidpi), (r = at && c ? c : r) && (a.style.backgroundImage = 'url("'.concat(r, '")'), g(a).setAttribute(ot, r), L(a, i, o)), O(t, e, n)
+      }
+
+      function D(t, e, n) {
+        var a;
+        T(t, e, n), a = e, e = n, (t = It[(n = t).tagName]) && (t(n, a), L(n, a, e))
+      }
+
+      function V(t, e, n) {
+        var a;
+        a = t, (-1 < yt.indexOf(a.tagName) ? D : G)(t, e, n)
+      }
+
+      function F(t, e, n) {
+        var a;
+        t.setAttribute("loading", "lazy"), T(t, e, n), a = e, (e = It[(n = t).tagName]) && e(n, a), s(t, vt)
+      }
+
+      function j(t) {
+        t.removeAttribute(ot), t.removeAttribute(rt), t.removeAttribute(ct)
+      }
+
+      function P(t) {
+        m(t, function(t) {
+          k(t, Et)
+        }), k(t, Et)
+      }
+
+      function S(t) {
+        var e;
+        (e = At[t.tagName]) ? e(t): E(e = t) && (t = I(e), e.style.backgroundImage = t.backgroundImage)
+      }
+
+      function U(t, e) {
+        var n;
+        S(t), n = e, u(e = t) || d(e) || (v(e, n.class_entered), v(e, n.class_exited), v(e, n.class_applied), v(e, n.class_loading), v(e, n.class_loaded), v(e, n.class_error)), r(t), y(t)
+      }
+
+      function $(t, e, n, a) {
+        var i;
+        n.cancel_on_exit && (c(t) !== ut || "IMG" === t.tagName && (z(t), m(i = t, function(t) {
+          j(t)
+        }), j(i), P(t), v(t, n.class_loading), p(a, -1), r(t), f(n.callback_cancel, t, e, a)))
+      }
+
+      function q(t, e, n, a) {
+        var i, o, r = (o = t, 0 <= pt.indexOf(c(o)));
+        s(t, "entered"), _(t, n.class_entered), v(t, n.class_exited), i = t, o = a, n.unobserve_entered && b(i, o), f(n.callback_enter, t, e, a), r || V(t, n, a)
+      }
+
+      function H(t) {
+        return t.use_native && "loading" in HTMLImageElement.prototype
+      }
+
+      function B(t, i, o) {
+        t.forEach(function(t) {
+          return (a = t).isIntersecting || 0 < a.intersectionRatio ? q(t.target, t, i, o) : (e = t.target, n = t, a = i, t = o, void(u(e) || (_(e, a.class_exited), $(e, n, a, t), f(a.callback_exit, e, n, t))));
+          var e, n, a
+        })
+      }
+
+      function J(e, n) {
+        var t;
+        et && !H(e) && (n._observer = new IntersectionObserver(function(t) {
+          B(t, e, n)
+        }, {
+          root: (t = e).container === document ? null : t.container,
+          rootMargin: t.thresholds || t.threshold + "px"
+        }))
+      }
+
+      function K(t) {
+        return Array.prototype.slice.call(t)
+      }
+
+      function Q(t) {
+        return t.container.querySelectorAll(t.elements_selector)
+      }
+
+      function W(t) {
+        return c(t) === _t
+      }
+
+      function X(t, e) {
+        return e = t || Q(e), K(e).filter(u)
+      }
+
+      function Y(e, t) {
+        var n;
+        (n = Q(e), K(n).filter(W)).forEach(function(t) {
+          v(t, e.class_error), r(t)
+        }), t.update()
+      }
+
+      function t(t, e) {
+        var n, a, t = i(t);
+        this._settings = t, this.loadingCount = 0, J(t, this), n = t, a = this, Z && window.addEventListener("online", function() {
+          Y(n, a)
+        }), this.update(e)
+      }
+      var Z = "undefined" != typeof window,
+        tt = Z && !("onscroll" in window) || "undefined" != typeof navigator && /(gle|ing|ro)bot|crawl|spider/i.test(navigator.userAgent),
+        et = Z && "IntersectionObserver" in window,
+        nt = Z && "classList" in document.createElement("p"),
+        at = Z && 1 < window.devicePixelRatio,
+        it = {
+          elements_selector: ".lazy",
+          container: tt || Z ? document : null,
+          threshold: 300,
+          thresholds: null,
+          data_src: "src",
+          data_srcset: "srcset",
+          data_sizes: "sizes",
+          data_bg: "bg",
+          data_bg_hidpi: "bg-hidpi",
+          data_bg_multi: "bg-multi",
+          data_bg_multi_hidpi: "bg-multi-hidpi",
+          data_poster: "poster",
+          class_applied: "applied",
+          class_loading: "litespeed-loading",
+          class_loaded: "litespeed-loaded",
+          class_error: "error",
+          class_entered: "entered",
+          class_exited: "exited",
+          unobserve_completed: !0,
+          unobserve_entered: !1,
+          cancel_on_exit: !0,
+          callback_enter: null,
+          callback_exit: null,
+          callback_applied: null,
+          callback_loading: null,
+          callback_loaded: null,
+          callback_error: null,
+          callback_finish: null,
+          callback_cancel: null,
+          use_native: !1
+        },
+        ot = "src",
+        rt = "srcset",
+        ct = "sizes",
+        lt = "poster",
+        st = "llOriginalAttrs",
+        ut = "loading",
+        dt = "loaded",
+        ft = "applied",
+        _t = "error",
+        vt = "native",
+        gt = "data-",
+        bt = "ll-status",
+        pt = [ut, dt, ft, _t],
+        ht = [ot],
+        mt = [ot, lt],
+        Et = [ot, rt, ct],
+        It = {
+          IMG: function(t, e) {
+            m(t, function(t) {
+              A(t, Et), x(t, e)
+            }), A(t, Et), x(t, e)
+          },
+          IFRAME: function(t, e) {
+            A(t, ht), w(t, ot, l(t, e.data_src))
+          },
+          VIDEO: function(t, e) {
+            a(t, function(t) {
+              A(t, ht), w(t, ot, l(t, e.data_src))
+            }), A(t, mt), w(t, lt, l(t, e.data_poster)), w(t, ot, l(t, e.data_src)), t.load()
+          }
+        },
+        yt = ["IMG", "IFRAME", "VIDEO"],
+        At = {
+          IMG: P,
+          IFRAME: function(t) {
+            k(t, ht)
+          },
+          VIDEO: function(t) {
+            a(t, function(t) {
+              k(t, ht)
+            }), k(t, mt), t.load()
+          }
+        },
+        kt = ["IMG", "IFRAME", "VIDEO"];
+      return t.prototype = {
+        update: function(t) {
+          var e, n, a, i = this._settings,
+            o = X(t, i); {
+            if (h(this, o.length), !tt && et) return H(i) ? (e = i, n = this, o.forEach(function(t) {
+              -1 !== kt.indexOf(t.tagName) && F(t, e, n)
+            }), void h(n, 0)) : (t = this._observer, i = o, t.disconnect(), a = t, void i.forEach(function(t) {
+              a.observe(t)
+            }));
+            this.loadAll(o)
+          }
+        },
+        destroy: function() {
+          this._observer && this._observer.disconnect(), Q(this._settings).forEach(function(t) {
+            y(t)
+          }), delete this._observer, delete this._settings, delete this.loadingCount, delete this.toLoadCount
+        },
+        loadAll: function(t) {
+          var e = this,
+            n = this._settings;
+          X(t, n).forEach(function(t) {
+            b(t, e), V(t, n, e)
+          })
+        },
+        restoreAll: function() {
+          var e = this._settings;
+          Q(e).forEach(function(t) {
+            U(t, e)
+          })
+        }
+      }, t.load = function(t, e) {
+        e = i(e);
+        V(t, e)
+      }, t.resetStatus = function(t) {
+        r(t)
+      }, Z && function(t, e) {
+        if (e)
+          if (e.length)
+            for (var n, a = 0; n = e[a]; a += 1) o(t, n);
+          else o(t, e)
+      }(t, window.lazyLoadOptions), t
+    });
+    ! function(e, t) {
+      "use strict";
+
+      function a() {
+        t.body.classList.add("litespeed_lazyloaded")
+      }
+
+      function n() {
+        console.log("[LiteSpeed] Start Lazy Load Images"), d = new LazyLoad({
+          elements_selector: "[data-lazyloaded]",
+          callback_finish: a
+        }), o = function() {
+          d.update()
+        }, e.MutationObserver && new MutationObserver(o).observe(t.documentElement, {
+          childList: !0,
+          subtree: !0,
+          attributes: !0
+        })
+      }
+      var d, o;
+      e.addEventListener ? e.addEventListener("load", n, !1) : e.attachEvent("onload", n)
+    }(window, document);
+  </script>
+
+  </html>
