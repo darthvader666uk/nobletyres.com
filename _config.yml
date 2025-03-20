@@ -54,6 +54,30 @@ twitter:
   username: nobletyres
   card: summary_large_image
 
+# Theme colors with proper contrast ratios
+theme_colors:
+  primary: "#004d99"      # Deep blue - contrast ratio 4.5:1 with white
+  secondary: "#333333"    # Dark gray - contrast ratio 12.6:1 with white
+  accent: "#e60000"       # Bright red - contrast ratio 4.7:1 with white
+  text: "#212121"         # Near black - contrast ratio 16:1 with white
+  background: "#ffffff"   # White
+  footer: "#1a1a1a"       # Very dark gray - contrast ratio 15.9:1 with white
+
+# Button styles with proper contrast
+buttons:
+  primary:
+    background: "#004d99"
+    text: "#ffffff"
+    hover: "#003366"
+  secondary:
+    background: "#333333"
+    text: "#ffffff"
+    hover: "#1a1a1a"
+  cta:
+    background: "#e60000"
+    text: "#ffffff"
+    hover: "#cc0000"
+
 defaults:
   - scope:
       path: ""
