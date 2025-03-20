@@ -1,11 +1,66 @@
-title: NOBLE TYRES & EXHAUSTS
-description: NOBLE TYRES & EXHAUSTS. 1ST CHOICE CAR GARAGE FOR TYRES, EXHAUSTS, BRAKES, MOT AND SERVICING IN ABERDARE
+title: Noble Tyres & Exhausts | Car Garage Aberdare
+description: Expert car garage in Aberdare offering tyres, exhausts, brakes, MOT and servicing. Family-run business with 30+ years experience. Best prices guaranteed.
 
 url: https://nobletyres.com
-baseurl: # Ex: /project-page
+baseurl: ""
 
+# Add these SEO settings
+author: Noble Tyres & Exhausts Ltd
+logo: /assets/images/logo.webp
+locale: en_GB
+timezone: Europe/London
+
+# Social media
+social:
+  facebook: nobletyresexhausts
+  google_business: noble-tyres-exhausts-aberdare
+
+# Business info
+business:
+  name: Noble Tyres & Exhausts Ltd
+  address:
+    street: Aberaman Industrial Estate
+    city: Aberdare
+    region: Wales
+    postcode: CF44 6DA
+  phone: "01685 871177"
+  email: info@nobletyres.com
+  opening_hours:
+    - "Monday-Friday: 8:30-17:30"
+    - "Saturday: 8:30-12:30"
+    - "Sunday: Closed"
+
+# SEO plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Navigation (use .html extension for better SEO)
 navigation:
     - title: Home
-      url: /index.htm
+      url: /index.html
+    - title: Services
+      url: /services.html
+    - title: About
+      url: /about.html
+    - title: Contact
+      url: /contact.html
 
 google_analytics: "G-3QBWP2GB2L"
+
+# Additional SEO settings
+twitter:
+  username: nobletyres
+  card: summary_large_image
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/default-share.webp
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
