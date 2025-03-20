@@ -78,11 +78,16 @@
     <meta property="business:contact_data:phone_number" content="01685 874476">
 
     <!-- Existing CSS -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/onepress-style.min.css">
-    <link rel="stylesheet" href="./css/animate.min.css">
-    <link rel="stylesheet" href="./css/lightgallery.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" id="wp-block-library-css" href="./css/wp-block-library-css.min.css?ver=6.6.2" type="text/css" media="all" />
+    <link rel="stylesheet" id="wp-block-library-theme-inline-css" href="./css/wp-block-library-theme-inline-css.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="onepress-animate-css" href="./css/animate.min.css?ver=2.3.10" type="text/css" media="all" />
+    <link rel="stylesheet" id="onepress-fa-shims-css" href="./css/v4-shims.min.css?ver=6.5.1" type="text/css" media="all" />
+    <link rel="stylesheet" id="onepress-bootstrap-css" href="./css/bootstrap.min.css?ver=2.3.10" type="text/css" media="all" />
+    <link rel="stylesheet" id="onepress-style-css" href="./css/onepress-style-css.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="onepress-style-inline-css" href="./css/onepress-style-inline-css.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="onepress-gallery-lightgallery-css" href="./css/lightgallery.min.css?ver=6.6.2" type="text/css" media="all" />
+    <link rel="stylesheet" id="remove-style-meta-css" href="./css/entrymetastyle.min.css?ver=1.0" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Favicons -->
     <link rel="icon" href="./images/favicon32x32.webp" sizes="32x32" type="image/webp">
@@ -115,9 +120,10 @@
     {% include footer.html %}
 
     <!-- Existing JavaScript -->
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/isotope.pkgd.min.js" defer></script>
-    <script src="./js/theme-all.min.js" defer></script>
-    <script src="./js/jquery.bully.js" defer></script>
+    <script type="text/javascript" src="./js/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+    <script type="text/javascript" src="./js/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer data-deferred="1"></script>
+    <script type="text/javascript" src="./js/isotope.pkgd.min.js?ver=2.3.10" id="onepress-gallery-masonry-js" defer data-deferred="1"></script>
+    <script type="text/javascript" src="./js/theme-all.min.js?ver=2.3.10" id="onepress-theme-js" defer data-deferred="1"></script>
+            <script type="text/javascript" src="./js/jquery.bully.js?ver=6.6.2" id="jquery.bully-js" defer data-deferred="1"></script>
 </body>
 </html>
