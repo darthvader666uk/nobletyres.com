@@ -1,127 +1,123 @@
 <!DOCTYPE html>
-    <html lang="en-GB">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-            <!-- Primary Meta Tags -->
-            <title>{% if page.title %}{{ page.title }}{% else %}Noble Tyres & Exhausts | Car Garage Aberdare | MOT Testing from £35{% endif %}</title>
-            <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Expert car garage in Aberdare offering MOT testing from £35, tyre fitting, brake repairs and servicing. Family-run with IMI certified technicians. Call 01685 874476.{% endif %}">
-            <meta name="keywords" content="car garage Aberdare, MOT testing, tyre fitting, brake repairs, car servicing, Noble Tyres">
+    <!-- Primary Meta Tags -->
+    <title>Noble Tyres & Exhausts | Car Garage Aberdare | MOT Testing from £35</title>
+    <meta name="description" content="Expert car garage in Aberdare offering MOT testing from £35, tyre fitting, brake repairs and servicing. Family-run with IMI certified technicians. Call 01685 874476.">
+    <meta name="keywords" content="car garage Aberdare, MOT testing, tyre fitting, brake repairs, car servicing, Noble Tyres">
 
-            <!-- Preconnect to Critical Origins -->
-            <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-            <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 
-            <!-- Schema.org Markup -->
-            <script type="application/ld+json">
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AutoRepair",
+        "name": "Noble Tyres & Exhausts",
+        "image": "https://nobletyres.com/images/noble-tyres-and-exhaust-front-garage-aberaman-aberdare.webp",
+        "description": "Expert car garage in Aberdare offering MOT testing from £35, tyre fitting, brake repairs and servicing. Family-run with IMI certified technicians.",
+        "@id": "https://nobletyres.com",
+        "url": "https://nobletyres.com",
+        "telephone": "01685874476",
+        "priceRange": "££",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Unit 3 C1 Trade Park, Aberaman",
+            "addressLocality": "Aberdare",
+            "postalCode": "CF44 6DA",
+            "addressRegion": "Wales",
+            "addressCountry": "GB"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 51.69669330009156,
+            "longitude": -3.417500084654438
+        },
+        "openingHoursSpecification": [
             {
-                "@context": "https://schema.org",
-                "@type": "AutoRepair",
-                "name": "Noble Tyres & Exhausts",
-                "image": "{{ site.url }}/images/noble-tyres-and-exhaust-front-garage-aberaman-aberdare.webp",
-                "description": "Expert car garage in Aberdare offering MOT testing from £35, tyre fitting, brake repairs and servicing. Family-run with IMI certified technicians.",
-                "@id": "{{ site.url }}",
-                "url": "{{ site.url }}",
-                "telephone": "01685874476",
-                "priceRange": "££",
-                "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "Unit 3 C1 Trade Park, Aberaman",
-                    "addressLocality": "Aberdare",
-                    "postalCode": "CF44 6DA",
-                    "addressRegion": "Wales",
-                    "addressCountry": "GB"
-                },
-                "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": 51.69669330009156,
-                    "longitude": -3.417500084654438
-                },
-                "openingHoursSpecification": [
-                    {
-                        "@type": "OpeningHoursSpecification",
-                        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                        "opens": "08:30",
-                        "closes": "17:30"
-                    },
-                    {
-                        "@type": "OpeningHoursSpecification",
-                        "dayOfWeek": "Saturday",
-                        "opens": "08:30",
-                        "closes": "12:30"
-                    }
-                ],
-                "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "ratingValue": "4.8",
-                    "reviewCount": "127"
-                }
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:30",
+                "closes": "17:30"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "08:30",
+                "closes": "12:30"
             }
-            </script>
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "127"
+        }
+    }
+    </script>
 
-            <!-- Open Graph Tags -->
-            <meta property="og:type" content="business.business">
-            <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Noble Tyres & Exhausts | Car Garage Aberdare{% endif %}">
-            <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Expert car garage offering MOT testing from £35, tyre fitting, brake repairs and servicing in Aberdare. Family-run with IMI certified technicians.{% endif %}">
-            <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-            <meta property="og:image" content="{{ site.url }}/images/noble-tyres-and-exhaust-front-garage-aberaman-aberdare.webp">
-            <meta property="og:image:width" content="1200">
-            <meta property="og:image:height" content="630">
-            <meta property="og:image:type" content="image/webp">
-            <meta property="og:site_name" content="Noble Tyres & Exhausts">
-            <meta property="og:locale" content="en_GB">
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="business.business">
+    <meta property="og:title" content="Noble Tyres & Exhausts | Car Garage Aberdare">
+    <meta property="og:description" content="Expert car garage offering MOT testing from £35, tyre fitting, brake repairs and servicing in Aberdare. Family-run with IMI certified technicians.">
+    <meta property="og:url" content="https://nobletyres.com/">
+    <meta property="og:image" content="https://nobletyres.com/images/noble-tyres-and-exhaust-front-garage-aberaman-aberdare.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="business:contact_data:street_address" content="Unit 3 C1 Trade Park, Aberaman">
+    <meta property="business:contact_data:locality" content="Aberdare">
+    <meta property="business:contact_data:postal_code" content="CF44 6DA">
+    <meta property="business:contact_data:country_name" content="United Kingdom">
+    <meta property="business:contact_data:phone_number" content="01685 874476">
 
-            <!-- Optimization -->
-            <link rel="preload" href="/css/critical.css" as="style">
-            <link rel="preload" href="/fonts/raleway-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Existing CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/onepress-style.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/lightgallery.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap">
 
-            <!-- Critical CSS -->
-            <!-- <style>{% include critical.css %}</style> -->
+    <!-- Favicons -->
+    <link rel="icon" href="./images/favicon32x32.webp" sizes="32x32" type="image/webp">
+    <link rel="icon" href="./images/favicon192x192.webp" sizes="192x192" type="image/webp">
+    <link rel="apple-touch-icon" href="./images/favicon180x180.webp">
+    <meta name="theme-color" content="#004d99">
 
-            <!-- Deferred CSS -->
-            <link rel="stylesheet" href="/css/main.min.css" media="print" onload="this.media='all'">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
-                media="print" onload="this.media='all'">
+    <!-- Analytics with Privacy Controls -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3QBWP2GB2L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-3QBWP2GB2L', {
+            'anonymize_ip': true,
+            'cookie_flags': 'SameSite=None;Secure'
+        });
+    </script>
+</head>
 
-            <!-- Favicons -->
-            <link rel="icon" href="/images/favicon32x32.webp" sizes="32x32">
-            <link rel="icon" href="/images/favicon192x192.webp" sizes="192x192">
-            <link rel="apple-touch-icon" href="/images/favicon180x180.webp">
-            <meta name="theme-color" content="#004d99">
+<body class="home" itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
 
-            <!-- Analytics -->
-            {% if site.google_analytics %}
-            <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-            <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '{{ site.google_analytics }}', {
-                    'anonymize_ip': true,
-                    'cookie_flags': 'SameSite=None;Secure'
-                });
-            </script>
-            {% endif %}
-        </head>
-        <body data-rsssl="1" class="home page-template page-template-template-frontpage page-template-template-frontpage-php page page-id-10340"></body>
-            <!-- Main Content -->
-            <main id="main" role="main">
-                {{ content }}
-            </main>
+    <!-- {% include header.html %} -->
 
-            <!-- Footer -->
-            {% include footer.html %}
-            <!-- Deferred JavaScript -->
-            <!-- <script src="/js/main.min.js" defer></script> -->
+    <main id="main" role="main">
+        {{ content }}
+    </main>
 
-            <script type="text/javascript" src="./js/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-            <script type="text/javascript" src="./js/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer data-deferred="1"></script>
-            <script type="text/javascript" src="./js/isotope.pkgd.min.js?ver=2.3.10" id="onepress-gallery-masonry-js" defer data-deferred="1"></script>
-            <script type="text/javascript" src="./js/theme-all.min.js?ver=2.3.10" id="onepress-theme-js" defer data-deferred="1"></script>
-            <script type="text/javascript" id="jquery.bully-js-extra" src="data:text/javascript;base64,dmFyIE9uZXByZXNzX0J1bGx5PXsiZW5hYmxlX2xhYmVsIjoiMSIsImRpc2FibGVfbW9iaWxlIjoiIiwic2VjdGlvbnMiOnsiaGVybyI6eyJpZCI6Imhlcm8iLCJfaWQiOiJoZXJvIiwiaW52ZXJzZSI6ITEsImVuYWJsZSI6ITEsInRpdGxlIjoiSG9tZSJ9LCJzZXJ2aWNlcyI6eyJpZCI6InNlcnZpY2VzIiwiX2lkIjoiZmVhdHVyZXMiLCJpbnZlcnNlIjohMSwiZW5hYmxlIjohMSwidGl0bGUiOiJPdXIgU2VydmljZXMifSwiYWJvdXQiOnsiaWQiOiJhYm91dCIsIl9pZCI6ImFib3V0IiwiaW52ZXJzZSI6ITEsImVuYWJsZSI6ITEsInRpdGxlIjoiQWJvdXQgVXMifSwicHJvZHVjdHMiOnsiaWQiOiJwcm9kdWN0cyIsIl9pZCI6InNlcnZpY2VzIiwiaW52ZXJzZSI6ITEsImVuYWJsZSI6ITEsInRpdGxlIjoiT3VyIFByb2R1Y3RzIn0sImNvbnRhY3QiOnsiaWQiOiJjb250YWN0IiwiX2lkIjoiY29udGFjdCIsImludmVyc2UiOiExLCJlbmFibGUiOiExLCJ0aXRsZSI6IkdldCBpbiB0b3VjaCJ9fX0=" defer></script>
-            <script type="text/javascript" src="./js/jquery.bully.js?ver=6.6.2" id="jquery.bully-js" defer data-deferred="1"></script>
+    {% include footer.html %}
 
-        </body>
-    </html>
+    <!-- Existing JavaScript -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/isotope.pkgd.js" defer></script>
+    <script src="./js/theme.js" defer></script>
+    <script src="./js/jquery.bully.js" defer></script>
+</body>
+</html>
