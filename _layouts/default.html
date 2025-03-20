@@ -6,14 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Primary Meta Tags -->
-    <title>Noble Tyres & Exhausts | Car Garage Aberdare | MOT Testing from £35</title>
-    <meta name="description" content="Expert car garage in Aberdare offering MOT testing from £35, tyre fitting, brake repairs and servicing. Family-run with IMI certified technicians. Call 01685 874476.">
+    <title>{{ page.title | default: "Noble Tyres & Exhausts | Car Garage Aberdare | MOT Testing from £35" }}</title>
+    <meta name="description" content="{{ page.description | default: 'Expert car garage in Aberdare offering MOT testing from £35, tyre fitting, brake repairs and servicing. Family-run with IMI certified technicians. Call 01685 874476.' }}">
     <meta name="keywords" content="car garage Aberdare, MOT testing, tyre fitting, brake repairs, car servicing, Noble Tyres">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+    <!-- Additional Meta Tags -->
+    <meta name="author" content="Noble Tyres & Exhausts LTD">
+    <meta name="geo.region" content="GB-WLS">
+    <meta name="geo.placename" content="Aberdare">
+    <meta name="geo.position" content="51.69669330009156;-3.417500084654438">
+    <meta name="ICBM" content="51.69669330009156, -3.417500084654438">
 
     <!-- Resource Hints -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
 
     <!-- Schema.org Markup -->
     <script type="application/ld+json">
@@ -58,24 +67,44 @@
             "@type": "AggregateRating",
             "ratingValue": "4.8",
             "reviewCount": "127"
-        }
+        },
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": 51.69669330009156,
+                "longitude": -3.417500084654438
+            },
+            "geoRadius": "16093.4"
+        },
+        "sameAs": [
+            "https://www.facebook.com/pg/nobletyres",
+            "https://www.google.com/maps?cid=10665307309080616806"
+        ]
     }
     </script>
 
     <!-- Open Graph Tags -->
     <meta property="og:type" content="business.business">
-    <meta property="og:title" content="Noble Tyres & Exhausts | Car Garage Aberdare">
-    <meta property="og:description" content="Expert car garage offering MOT testing from £35, tyre fitting, brake repairs and servicing in Aberdare. Family-run with IMI certified technicians.">
-    <meta property="og:url" content="https://nobletyres.com/">
-    <meta property="og:image" content="https://nobletyres.com/images/noble-tyres-and-exhaust-front-garage-aberaman-aberdare.webp">
+    <meta property="og:title" content="{{ page.title | default: 'Noble Tyres & Exhausts | Car Garage Aberdare' }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}/images/noble-tyres-and-exhaust-front-garage-aberaman-aberdare.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/webp">
-    <meta property="business:contact_data:street_address" content="Unit 3 C1 Trade Park, Aberaman">
-    <meta property="business:contact_data:locality" content="Aberdare">
-    <meta property="business:contact_data:postal_code" content="CF44 6DA">
-    <meta property="business:contact_data:country_name" content="United Kingdom">
-    <meta property="business:contact_data:phone_number" content="01685 874476">
+    <meta property="og:site_name" content="Noble Tyres & Exhausts">
+    <meta property="og:locale" content="en_GB">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title | default: 'Noble Tyres & Exhausts | Car Garage Aberdare' }}">
+    <meta name="twitter:description" content="{{ page.description }}">
+    <meta name="twitter:image" content="{{ site.url }}/images/noble-tyres-and-exhaust-front-garage-aberaman-aberdare.webp">
+
+    <!-- Resource Loading -->
+    <link rel="preload" href="./css/critical.css" as="style">
+    <link rel="preload" href="./fonts/raleway-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- Existing CSS -->
     <link rel="stylesheet" id="wp-block-library-css" href="./css/wp-block-library-css.min.css?ver=6.6.2" type="text/css" media="all" />
@@ -96,7 +125,7 @@
     <link rel="apple-touch-icon" href="./images/favicon180x180.webp">
     <meta name="theme-color" content="#004d99">
 
-    <!-- Analytics with Privacy Controls -->
+    <!-- Analytics with Enhanced Privacy -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3QBWP2GB2L"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -104,7 +133,9 @@
         gtag('js', new Date());
         gtag('config', 'G-3QBWP2GB2L', {
             'anonymize_ip': true,
-            'cookie_flags': 'SameSite=None;Secure'
+            'cookie_flags': 'SameSite=None;Secure',
+            'allow_google_signals': false,
+            'allow_ad_personalization_signals': false
         });
     </script>
 </head>
@@ -112,7 +143,7 @@
 <body class="home" itemscope itemtype="http://schema.org/WebPage">
     <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
 
-    {% include header.html %}
+    <!-- {% include header.html %} -->
 
     <main id="main" role="main">
         {{ content }}
