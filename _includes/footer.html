@@ -1,33 +1,72 @@
-<footer id="colophon" class="site-footer" role="contentinfo">
+<footer id="colophon" class="site-footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
     <div class="footer-connect">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 offset-md-2 col-sm-12 offset-md-0">
-            <div class="footer-social">
-              <h5 class="follow-heading">Check us out on Facebook, Twitter and Google+</h5>
-              <div class="footer-social-icons">
-                <a target="_blank" href="https://www.facebook.com/pg/nobletyres" title="Facebook">
-                  <i class="fa  fa-facebook"></i>
-                </a>
-                <a target="_blank" href="https://twitter.com/NobleTyres" title="Twitter">
-                  <i class="fa  fa-twitter"></i>
-                </a>
-                <a target="_blank" href="https://www.google.com/maps/place/Noble+Tyres++Exhausts+LTD/@51.696547,-3.417543,17z/data=!4m5!3m4!1s0x0:0x93fe36eabb4f456!8m2!3d51.696578!4d-3.4175921?hl=en-GB" title="Google+">
-                  <i class="fa  fa-google"></i>
-                </a>
-              </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 col-sm-12 offset-md-0">
+                    <!-- Business Information -->
+                    <div class="footer-business-info" itemscope itemtype="http://schema.org/AutoRepair">
+                        <h3 itemprop="name">Noble Tyres & Exhausts LTD</h3>
+                        <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                            <span itemprop="streetAddress">Unit 3 C1 Trade Park, Aberaman</span><br>
+                            <span itemprop="addressLocality">Aberdare</span><br>
+                            <span itemprop="postalCode">CF44 6DA</span>
+                        </address>
+                        <p>Tel: <a href="tel:01685874476" itemprop="telephone">01685 874476</a></p>
+                        <div itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+                            <h4>Opening Hours:</h4>
+                            <ul>
+                                <li>Monday-Friday: 8:30-17:30</li>
+                                <li>Saturday: 8:30-12:30</li>
+                                <li>Sunday: Closed</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="footer-social">
+                        <h4 class="follow-heading">Follow Us on Social Media</h4>
+                        <div class="footer-social-icons">
+                            <a target="_blank"
+                               href="https://www.facebook.com/pg/nobletyres"
+                               title="Follow Noble Tyres on Facebook"
+                               rel="noopener"
+                               aria-label="Facebook">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            </a>
+                            <a target="_blank"
+                               href="https://twitter.com/NobleTyres"
+                               title="Follow Noble Tyres on Twitter"
+                               rel="noopener"
+                               aria-label="Twitter">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a target="_blank"
+                               href="https://www.google.com/maps?cid=10665307309080616806"
+                               title="Find Noble Tyres on Google Maps"
+                               rel="noopener"
+                               aria-label="Google Maps">
+                                <i class="fab fa-google" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
+
+    <!-- Copyright Section -->
     <div class="site-info">
-      <div class="container">
-        <div class="btt">
-          <a class="back-to-top" href="#page" title="Back To Top">
-            <i class="fa fa-angle-double-up wow flash" data-wow-duration="2s"></i>
-          </a>
-        </div> Copyright &copy; 2024 Noble Tyres &amp; Exhausts LTD
-      </div>
+        <div class="container">
+            <div class="btt">
+                <a class="back-to-top"
+                   href="#page"
+                   title="Back To Top"
+                   aria-label="Scroll back to top">
+                    <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+                </a>
+            </div>
+            <p>&copy; {% assign currentYear = 'now' | date: "%Y" %}{{ currentYear }} Noble Tyres & Exhausts LTD.
+               All rights reserved. <a href="/sitemap.xml">Sitemap</a></p>
+        </div>
     </div>
-  </footer>
+</footer>
